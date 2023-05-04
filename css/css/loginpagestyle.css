@@ -160,21 +160,3 @@ img{
     transform: scale(3);
     cursor: pointer;
 }
-.ques{
-    position: absolute;
-    font-size: x-large;
-    font-family: 'Gill Sans MT';
-    color: grey;
-    margin-top: 630px;
-    margin-right: 280px;
-}
-.insc{
-    position: absolute;
-    text-decoration: none;
-    color: white;
-    font-family: 'Gill Sans MT';
-    font-size: x-large;
-    margin-top: 630px;
-    margin-left: 400px;
-    cursor: pointer;
-}

@@ -118,9 +118,29 @@ img{
     margin-left: 900px;
 }
 
+#password{
+    position: absolute;
+    color: white;
+    font-family: 'Gill Sans MT';
+    font-size: xx-large;
+    margin-top: 600px;
+    margin-left: 900px;
+}
+
 #emails{
     position: absolute;
     margin-top: 450px;
+    margin-left: 900px;
+    width: 300px;
+    height: 40px;
+    font-size: x-large;
+    font-family: 'Gill Sans MT';
+    border-radius: 10px;
+}
+
+#passwords{
+    position: absolute;
+    margin-top: 650px;
     margin-left: 900px;
     width: 300px;
     height: 40px;
@@ -167,7 +187,6 @@ img{
     height: 100px;
     background: yellow;
     opacity: 0;
-    transform: translateX(-8px) translateY(-30px);
 }
 
 
@@ -200,7 +219,6 @@ img{
     height: 100px;
     background:rgb(129, 60, 10);
     opacity: 0;
-    transform: translateX(-8px) translateY(-30px);
 }
 
 @keyframes changetoyellow {
@@ -237,7 +255,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    opacity: 0;
 }
 
 
@@ -255,6 +273,8 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+
     }
 
     /*IMPORTANT: these animations happen to the year options when the user clicks on the according CYCLE (for exemple of he clicks on CPI the first and second year will appear), and the other year options of the other cycle will disappear with the reverse animations below*/  
@@ -325,6 +345,8 @@ img{
     align-items: center;
     justify-content: center;
     margin-left: 30px;
+    opacity: 0;
+
     
 
 }
@@ -343,6 +365,8 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+
 }
 
 
@@ -359,6 +383,8 @@ img{
     align-items: center;
     justify-content: center;
     margin-left: 170px;
+    opacity: 0;
+
 }
 
 @keyframes thirdyear {
@@ -434,7 +460,7 @@ img{
     display: flex;
     justify-content: center;
     margin-left: 900px;
-    margin-top: 600px;
+    margin-top: 750px;
     cursor: pointer;
     overflow: hidden;
 }
@@ -543,6 +569,16 @@ img{
     margin-left: 970px;
     margin-top: 570px;
 }
+
+#errorpassword{
+    position: absolute;
+    font-size: large;
+    font-family: 'Gill Sans MT';
+    color: red;
+    margin-left: 900px;
+    margin-top: 700px;
+}
+
 .hide{
     display: none;
 }

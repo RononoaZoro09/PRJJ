@@ -4,6 +4,10 @@ body{
     justify-content: center;
 }
 
+img{
+    transform: scale(0.9);
+}
+
 .nnn{
     position: absolute;
     background: linear-gradient(to left, red, black);

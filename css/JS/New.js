@@ -9,7 +9,6 @@ let cpiyears=[document.getElementById("year1"),document.getElementById("year2")]
 let csyears=[document.getElementById("year3"),document.getElementById("year4"),document.getElementById("year5")];
 let submit=document.getElementById("sub");
 let i=0;
-document.getElementById("email").style.display = 'none';
 document.getElementById("cpi").onclick= function(){
 
     //change the cpi button background to yellow
