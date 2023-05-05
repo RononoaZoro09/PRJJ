@@ -19,7 +19,6 @@ ul li {
 }
 ul {
   display: flex;
-  justify-content: center;
   column-gap: 5px;
   list-style: none;
   margin: auto;
@@ -204,7 +203,7 @@ ul li:hover > a:after {
 }
 /*scrolling to the left or the right*/
 
-#scroll{
+.scroll{
     position:absolute;
     width: 1480px;
     height: 450px;
@@ -212,8 +211,10 @@ ul li:hover > a:after {
     transform: translateX(25px);
     background-color: gray;
     border-radius: 10px;
-    animation: appear 0.3s;}
-#scroll_left{
+    animation: appear 0.3s;
+    overflow: hidden;
+  }
+.scroll_left{
     position: absolute;
     display: flex;
     justify-content: center;
@@ -227,7 +228,7 @@ ul li:hover > a:after {
     opacity: 1;
 }
 
-#scroll_left span{
+.scroll_left span{
     font-family: 'Gill Sans MT';
     font-weight: 200;
     margin-right: 5px;
@@ -235,7 +236,7 @@ ul li:hover > a:after {
     margin-top: 23px;
 }
 
-#scroll_right{
+.scroll_right{
     position: absolute;
     display: flex;
     justify-content: center;
@@ -248,7 +249,7 @@ ul li:hover > a:after {
     cursor: pointer;
 }
 
-#scroll_right span{
+.scroll_right span{
     font-family: 'Gill Sans MT';
     font-weight: 200;
     margin-left: 2px;
@@ -256,55 +257,14 @@ ul li:hover > a:after {
     margin-top: 23px;
 }
 
-@keyframes fadetoleft {
-    0%{transform: translateX(0px);
-    opacity: 1;
-    display: block;}
-
-100%{transform: translateX(-50px);
-    opacity: 0;
-    display: none;}
-}
-
-@keyframes showtoleft {
-    50%{display: none;
-        opacity: 0;
-    transform: translateX(0px);}
-
-    100%{transform: translateX(50px);
-    opacity: 1;
-    display: block;}
-}
-
-@keyframes fadetoright {
-    0%{transform: translateX(0px);
-        opacity: 1;
-        display: block;}
-    
-    50%{transform: translateX(100px);
-        opacity: 0;
-        display: none;}
-    }
-
-@keyframes showtoright {
-    
-    50%{transform: translateX(50px);
-        opacity: 0;
-        display: none;}
-    
-    100%{transform: translateX(0px);
-        opacity: 1;
-        display: block;}
-}
-
 /*these are the status of each book*/
 
-#sld{
+.sld{
     display: flex;
     gap: 300px;
 }
 
- li #book{
+ li .book{
     position: absolute;
     height: 355px;
     width: 190px;
@@ -313,8 +273,9 @@ ul li:hover > a:after {
     margin-left: 190px;
     border-radius: 10px;
     animation: downtotop 1.4s;
+    transform: translateX(-150px);
 }
- li #book #the_average_rating{
+ li .book #the_average_rating{
     position: absolute;
     color: white;
     font-size: larger;
@@ -322,7 +283,7 @@ ul li:hover > a:after {
     margin-left: 10px;
     margin-top: 13px;
 }
- li #book #rating{
+ li .book #rating{
     position: absolute;
     margin-top: 13px;
     margin-left: 65px;
@@ -333,7 +294,7 @@ ul li:hover > a:after {
     height: 20px;
 }
 
- li #book #rating #round{
+ li .book #rating #round{
     width:40px;
     height:40px;
     border-radius: 50%;
@@ -342,26 +303,26 @@ ul li:hover > a:after {
     margin-left: 60px;
 }
 
- li #book #rating #round img{
+ li .book #rating #round img{
     width: 27px;
     height: 27px;
     transform: translateY(5px) translateX(5px);
 }
 
- li #book #image{
+ li .book #image a{
     position: absolute;
     width: 160px;
     height: 190px;
     background-color: rgb(180, 180, 180);
     margin-left: 5px;
-    margin-top: 50px;
+    margin-top: 40px;
     border-radius: 8px;
 }
-li #book #image img{
+li .book #image img{
     height: 190px;
     width: 160px;
 }
-#book #title{
+.book #title{
     position: absolute;
     margin-top: 250px;
     margin-left: 10px;
@@ -369,7 +330,7 @@ li #book #image img{
     font-family: 'Gill Sans MT';
     font-weight: bold;
 }
-#book #author{
+.book #author{
     position: absolute;
     margin-top: 270px;
     margin-left: 10px;
@@ -379,7 +340,7 @@ li #book #image img{
 }
 
 
-#book #state{
+.book #state{
     position: absolute;
     margin-top: 305px;
     margin-left: 12px;
@@ -393,7 +354,7 @@ li #book #image img{
 }
 /*the order style for each book*/
 
-#book #yesno{
+.book #yesno{
     position: absolute;
     margin-top: 295px;
     margin-left: 100px;
